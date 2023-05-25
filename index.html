@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta metacharset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books</title>
+  <!-- resetar o css da pagida com CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<header class="header">
+  <h1><img src="imagens/Logo-1.png" /></h1>
+</header>
+
+<body>
+  <section class="banner"></section>
+  <nav class="wrap">
+    <ul class="nav">
+      <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
+          FRONT-END</button>
+      </li>
+      <li><button class="btn btn-back" href="#" id="btnFiltrarLivrosBack" value="back-end">LIVROS DE BACK-END</button>
+      </li>
+      <li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">LIVROS DE DADOS</button></li>
+      <li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis" value ="disponivel">LIVROS DISPONÍVEIS</button></li>
+      <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
+    </ul>
+  </nav>
+  <section class="livros wrap" id="livros">
+    <!--
+    <div class="livro">
+      <img class="livro__imagens" src="imagens/Cangaceiro-Javascript.png" alt="Capa do livro Cangaceiro JavaScript" />
+      <h2 class="livro__titulo">
+        Cangaceiro JavaScript:
+        Uma aventura no sertão da programação
+      </h2>
+      <p class="livro__descricao">Flávio Almeida</p>
+      <p class="livro__preco" id="preco">R$29,90</p>
+      <div class="tags">
+        <span class="tag">Front-end</span>
+      </div>
+    </div>
+
+    <div class="livro">
+      <img class="livro__imagens" src="imagens/Bootstrap4.png" alt="Capa do livro Bootstrap 4
+          Conheça a biblioteca front-end mais utilizada no mundo" />
+      <h2 class="livro__titulo">
+        Bootstrap 4
+        Conheça a biblioteca front-end mais utilizada no mundo
+      </h2>
+      <p class="livro__descricao">Natan Souza</p>
+      <p class="livro__preco" id="preco">R$29,90</p>
+      <div class="tags">
+        <span class="tag">Front-end</span>
+        <span class="tag">Back-end</span>
+      </div>
+    </div>
+
+    <div class="livro">
+      <img class="livro__imagens indisponivel" src="imagens/Sass.png" alt="Capa do livro Sass
+          Aprendendo pré-processadores CSS" />
+      <h2 class="livro__titulo">
+        Sass
+        Aprendendo pré-processadores CSS
+      </h2>
+      <p class="livro__descricao">Natan Souza</p>
+      <p class="livro__preco" id="preco">R$29,90</p>
+      <div class="tags">
+        <span class="tag">Front-end</span>
+        <span class="tag">Back-end</span>
+      </div>
+    </div>
+
+    <div class="livro">
+      <img class="livro__imagens" src="imagens/Turbine-seu-CSS.png" alt="Capa do livro Turbine seu CSS
+          Folhas de destilo inteligentes com Sass" />
+      <h2 class="livro__titulo">
+        Turbine seu CSS
+        Folhas de destilo inteligentes com Sass
+      </h2>
+      <p class="livro__descricao">Rosicléia Frasson</p>
+      <p class="livro__preco" id="preco">R$29,90</p>
+      <div class="tags">
+        <span class="tag">Front-end</span>
+        <span class="tag">Back-end</span>
+      </div>
+    </div>
+
+    <div class="livro">
+      <img class="livro__imagens" src="imagens/Angular-11-e-Firebase.png"
+        alt="Capa do livro Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma Google" />
+      <h2 class="livro__titulo">
+        Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma Google
+      </h2>
+      <p class="livro__descricao">Kheronn Khennedy Machado</p>
+      <p class="livro__preco" id="preco">R$29,90</p>
+      <div class="tags">
+        <span class="tag">Front-end</span>
+        <span class="tag">Back-end</span>
+      </div>
+    </div>
+    -->
+  </section>
+
+
+  <section id="valor_total_livros_disponiveis">
+    <!-- <div class="livros__disponiveis">
+      <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
+    </div> -->
+  </section>
+
+  <footer class="rodape">
+    <p>Alura - Mergulhe em tecnologia</p>
+  </footer>
+
+  <script src="./app/main.js" type="text/javascript" ></script>
+  <script src="./app/metodoForEach.js" type="text/javascript" ></script>
+  <script src="./app/metodoMap.js" type="text/javascript" ></script>
+  <script src="./app/metodoFilter.js" type="text/javascript" ></script>
+  <script src="./app/metodoSort.js" type="text/javascript"></script>
+  <script src="./app/metodoReduce.js" type="text/javascript"></script>
+  
+</body>
+
+</html>
